@@ -42,8 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(      
-      body: _widgetOptions.elementAt(_selectedIndex),
+    return Scaffold( 
+      body: 
+      _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           
@@ -59,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.person),
             label: 'Профиль',
           ),
+          
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: const Color.fromARGB(255, 32, 100, 156),
